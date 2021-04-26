@@ -1,32 +1,31 @@
-const SEND_MESSAGE = 'SEND_MESSAGE';
+const SEND_MESSAGE = 'SEND_MESSAGE'
 
 type DialogType = {
-    id: number,
+    id: number
     name: string
 }
-
 type MessageType = {
-    id: number,
+    id: number
     message: string
 }
 
 let initialState = {
     dialogs: [
-        {id: 1, name: 'Dimych'},
-        {id: 2, name: 'Andrew'},
-        {id: 3, name: 'Sveta'},
-        {id: 4, name: 'Sasha'},
+        {id: 1, name: 'Phil'},
+        {id: 2, name: 'Nick'},
+        {id: 3, name: 'Helen'},
+        {id: 4, name: 'Julia'},
         {id: 5, name: 'Viktor'},
         {id: 6, name: 'Valera'}
     ] as Array<DialogType>,
     messages: [
-        {id: 1, message: 'Hi'},
-        {id: 2, message: 'Hello'},
+        {id: 1, message: 'Whats up'},
+        {id: 2, message: 'Hellow'},
         {id: 3, message: 'Yo'},
-        {id: 4, message: 'Hey'},
-        {id: 5, message: 'Yo'}
+        {id: 4, message: 'hey'},
+        {id: 5, message: 'Hi'}
     ] as Array<MessageType>
-};
+}
 
 export type InitialStateType = typeof initialState
 
